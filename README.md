@@ -24,6 +24,8 @@ cd MCS
 pip install -r requirements.txt
 
 ```
+- After the git clone go at "Resources/Roleta" and unpack the YoloDetector.pt (the file is splited in 6 parts to can be uploaded at github)
+
 
 ## Recomended Batch example:
 ```bash
