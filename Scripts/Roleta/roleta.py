@@ -450,7 +450,7 @@ class Roleta (Base):
             # 2. Clica no slot até aparecer Confirm
             loops = 0
             clicked = False
-            while not self.detections.confirm and loops < 15 and self.running:
+            while not self.detections.confirm and loops < self.max_recursive and self.running:
                 await self.tap_cords(cords)
                 await self.smart_delay(base_ms=512)
                 await self.screenshot()
