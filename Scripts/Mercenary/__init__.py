@@ -1,0 +1,1 @@
+from .mercenary import Mercenary
