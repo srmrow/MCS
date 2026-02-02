@@ -839,7 +839,7 @@ class adb_v2:
                 content += f'\n{str(_port)}'
                 with open(self.oldports_path, "w", encoding="utf-8") as f:
                     f.write(content.strip())
-                self.message(self.get_string('ADB24').replace('$P0RT$', _port))
+                self.message(self.get_string('ADB24').replace('$P0RT$', str(_port)))
         except Exception as e:
             self.debug(self.get_string('ADB4').replace('$from$', self.__alocatePort.__name__).replace('$C0D3$', str(e)))
 
